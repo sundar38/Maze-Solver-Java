@@ -14,7 +14,7 @@ import javax.swing.SwingUtilities;
 
 public class NewClass extends JFrame {
     private int [][] maze=
-    {{1,1,1,1,1,1,1,1,1,1,1,1,1},
+          {{1,1,1,1,1,1,1,1,1,1,1,1,1},
           {1,0,1,0,1,0,1,0,0,0,0,0,1},
           {1,0,1,0,0,0,1,0,1,1,1,0,1},
           {1,0,0,0,1,1,1,0,0,0,0,0,1},

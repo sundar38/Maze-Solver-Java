@@ -13,34 +13,35 @@ public class DepthFirst {
         if(maze[y][x]==0){
             maze[y][x]=2;
             
-            int dx=-1;
+            int dx=-1; //left
             int dy=0;
             if (searchpath(maze, x+dx,y+dy,path)){
                 path.add(x);
                 path.add(y);
                 return true;
             }
-            dx=1;
-            dy=0;
-            if (searchpath(maze, x+dx,y+dy,path)){
-                path.add(x);
-                path.add(y);
-                return true;
-            }
-            dx=0;
+            
+            dx=0; //up
             dy=-1;
             if (searchpath(maze, x+dx,y+dy,path)){
                 path.add(x);
                 path.add(y);
                 return true;
             }
-            dx=0;
+            dx=1; //mpve right
+            dy=0;
+            if (searchpath(maze, x+dx,y+dy,path)){
+                path.add(x);
+                path.add(y);
+                return true;
+            }
+            dx=0; //down
             dy=1;
             if (searchpath(maze, x+dx,y+dy,path)){
                 path.add(x);
                 path.add(y);
                 return true;
-            } 
+            }             
         }
         return false;
     }
